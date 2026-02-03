@@ -16,3 +16,12 @@ if [ $? -ne 0 ]; then
 else 
     echo "Installing nginx is sucusses"
 fi
+
+apt install nodejs -y
+
+if [ $? -ne 0 ]; then
+    echo  "INstalling nodejs .....failure"
+    exit 1
+else 
+    echo "Installing nodejs  is sucusses"
+fi
